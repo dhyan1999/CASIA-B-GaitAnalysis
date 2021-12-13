@@ -52,6 +52,6 @@ The raw data was then subjected to certain preprocessing techniques.The performa
 
 - Python Basics Understanding
 
-- [OpenCV](https://pypi.org/project/opencv-python/ "OpenCV") Library Installed 
+- Understanding of Machine Learning and Deep Learning libraries
 
-- Computer Vision Basic Understanding
+- A deep knowledge of [Transfer Learning models](https://keras.io/api/applications/)
