@@ -59,5 +59,5 @@ Resnet50
 ```py
 res = ResNet50(weights='imagenet', include_top=False, input_shape=(256, 256, 3))
 ```
-![resnet50](image/resnet50.png)
+![resnet50](image/resnet50.jpeg)
 
