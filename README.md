@@ -24,9 +24,9 @@ The raw data was then subjected to certain preprocessing techniques.The performa
 
 1. [Manifest](#-manifest)
 2. [Prerequisites](#-prerequisites)
-3. [Implementation of Code](##-implementation-of-code)
-4. [Future scope](#-future-scope)
-5. [Video](#video)
+3. [ModelArchitecture](##-Model-Architecture)
+4. [Implementation of Code](##-implementation-of-code)
+
 
 ## 🧑🏻‍🏫 Manifest
 
@@ -41,6 +41,29 @@ The raw data was then subjected to certain preprocessing techniques.The performa
 - README.md ---> This markdown file you are reading.
 ```
 
+## 𝌭 Model Architecture
+
+```py
+x = res.output 
+x = GlobalAveragePooling2D()(x)
+x = BatchNormalization()(x)
+x = Dropout(0.5)(x)
+x = Dense(512, activation='relu')(x)
+x = BatchNormalization()(x)
+x = Dropout(0.5)(x)
+x = Dense(3, activation='softmax')(x)
+
+model = Model(res.input, x) 
+opt = tf.keras.optimizers.RMSprop(
+    learning_rate=1e-4 ,
+    rho=0.9,
+    momentum=0.0,
+    epsilon=1e-07,
+    centered=False,
+    name="RMSprop"
+)
+model.compile(optimizer=opt, loss='categorical_crossentropy', metrics=['accuracy']) 
+```
 
 ## 🤔 Prerequisites
 
