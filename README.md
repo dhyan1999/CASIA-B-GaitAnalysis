@@ -24,13 +24,9 @@ The raw data was then subjected to certain preprocessing techniques.The performa
 
 1. [Manifest](#-manifest)
 2. [Prerequisites](#-prerequisites)
-3. [Installation Steps](#%EF%B8%8F-installation-steps)
-4. [Installation of important Libraries](#-installation-of-important-libraries)
-5. [Installation of labelImg](#installation-of-labelImg)
-6. [Use of labelImg in the project](#Use-of-labelImg-in-the-project)
-7. [Implementation of Code](##-implementation-of-code)
-8. [Future scope](#-future-scope)
-9. [Video](#video)
+3. [Implementation of Code](##-implementation-of-code)
+4. [Future scope](#-future-scope)
+5. [Video](#video)
 
 ## 🧑🏻‍🏫 Manifest
 
@@ -55,3 +51,13 @@ The raw data was then subjected to certain preprocessing techniques.The performa
 - Understanding of Machine Learning and Deep Learning libraries
 
 - A deep knowledge of [Transfer Learning models](https://keras.io/api/applications/)
+
+## 👨🏻‍💻 Implementation of Code
+
+Resnet50
+
+```py
+res = ResNet50(weights='imagenet', include_top=False, input_shape=(256, 256, 3))
+```
+![resnet50](image/resnet50.png)
+
