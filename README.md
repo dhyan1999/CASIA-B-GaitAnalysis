@@ -78,7 +78,8 @@ model.compile(optimizer=opt, loss='categorical_crossentropy', metrics=['accuracy
 ## 👨🏻‍💻 Implementation of Code
 
 - Resnet50
-<par>ResNet-50 is a 50-layer DCNN network and ResNet-152V2 is a 150-layer DCNN network. One may retrieve a pretrained variant of the network from the ImageNet database , which has been trained more than a million photos. The network can categorize photos into 1000 different object categories, including keyboards, mice, pencils, and a variety of animals. As a result, the network has learnt a variety of rich extracted features for a variety of pictures. The network's picture input size is 256 by 256 pixels</par>
+</br>
+<p>ResNet-50 is a 50-layer DCNN network and ResNet-152V2 is a 150-layer DCNN network. One may retrieve a pretrained variant of the network from the ImageNet database , which has been trained more than a million photos. The network can categorize photos into 1000 different object categories, including keyboards, mice, pencils, and a variety of animals. As a result, the network has learnt a variety of rich extracted features for a variety of pictures. The network's picture input size is 256 by 256 pixels</p>
 
 ```py
 res = ResNet50(weights='imagenet', include_top=False, input_shape=(256, 256, 3))
