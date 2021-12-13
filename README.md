@@ -78,7 +78,6 @@ model.compile(optimizer=opt, loss='categorical_crossentropy', metrics=['accuracy
 ## 👨🏻‍💻 Implementation of Code
 
 - Resnet50
-</br>
 <p>ResNet-50 is a 50-layer DCNN network and ResNet-152V2 is a 150-layer DCNN network. One may retrieve a pretrained variant of the network from the ImageNet database , which has been trained more than a million photos. The network can categorize photos into 1000 different object categories, including keyboards, mice, pencils, and a variety of animals. As a result, the network has learnt a variety of rich extracted features for a variety of pictures. The network's picture input size is 256 by 256 pixels</p>
 
 ```py
@@ -93,7 +92,9 @@ res152v2 = ResNet152V2(weights='imagenet', include_top=False, input_shape=(256, 
 ```
 ![resnet152v2](image/resnet152v2.jpeg)
 
-- inceptionv2
+- Inceptionv2
+
+<p>In the architecture of Inception V2, the two 3X3 convolutions replace the 5X5 convolution. Because a 5X5 convolution is 2.78 more costly than a 3X3 convolution, this reduces computing time and hence boosts computational speed. As a result, using two 3X3 layers instead of 5X5 improves architectural performance.</p>
 
 ```py
 inceptionv2 = InceptionResNetV2(weights='imagenet', include_top=False, input_shape=(256, 256, 3)) 
@@ -101,6 +102,11 @@ inceptionv2 = InceptionResNetV2(weights='imagenet', include_top=False, input_sha
 ![inceptionv2](image/inceptionv2.jpeg)
 
 - Inceptionv3
+
+<p>Inception V3 is comparable to Inception V2 and includes all of its features, with the following alterations and additions:
+The RMSprop optimizer is used.
+Batch normalisation in the Auxiliary classifier's fully linked layer.
+Regularization of the classifier using 7 factorised Convolution Label Smoothing Regularization: This approach estimates the influence of label-dropout during training to regularise the classifier. It stops the classifier from over-predicting a class. The addition of label smoothing improves the error rate by 0.2 percent.</p>
 
 ```py
 inceptionv3 = InceptionResNetV3(weights='imagenet', include_top=False, input_shape=(256, 256, 3)) 
