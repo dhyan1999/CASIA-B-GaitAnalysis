@@ -1,0 +1,19 @@
+Libraries needed for the code and model to run
+
+- Tensor-flow
+- Skit-Learn
+- CV2
+- Keras
+- Split-Folders
+- Pandas
+- NumPy
+- Matpltlib
+
+
+Link to Download the CASIA-B DataSet : http://www.cbsr.ia.ac.cn/english/Gait%20Databases.asp
+
+Steps to run the project
+
+Step 1: Run Pre-ProcessingPart1.ipynb
+
+Step 2: After extracting the data into Training and Validation folder run all the models file
