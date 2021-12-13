@@ -54,10 +54,32 @@ The raw data was then subjected to certain preprocessing techniques.The performa
 
 ## 👨🏻‍💻 Implementation of Code
 
-Resnet50
+- Resnet50
 
 ```py
 res = ResNet50(weights='imagenet', include_top=False, input_shape=(256, 256, 3))
 ```
 ![resnet50](image/resnet50.jpeg)
+
+- Resnet152V2
+
+```py
+res152v2 = ResNet152V2(weights='imagenet', include_top=False, input_shape=(256, 256, 3))
+```
+![resnet152v2](image/resnet152v2.jpeg)
+
+- inceptionv2
+
+```py
+inceptionv2 = InceptionResNetV2(weights='imagenet', include_top=False, input_shape=(256, 256, 3)) 
+```
+![inceptionv2](image/inceptionv2.jpeg)
+
+- Inceptionv3
+
+```py
+inceptionv3 = InceptionResNetV3(weights='imagenet', include_top=False, input_shape=(256, 256, 3)) 
+```
+![inceptionv3](image/inceptionv3.jpeg)
+
 
