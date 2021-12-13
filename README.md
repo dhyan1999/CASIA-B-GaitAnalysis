@@ -24,7 +24,7 @@ The raw data was then subjected to certain preprocessing techniques.The performa
 
 1. [Manifest](#-manifest)
 2. [Prerequisites](#-prerequisites)
-3. [ModelArchitecture](##-Model-Architecture)
+3. [ModelArchitecture](#-model-architecture)
 4. [Implementation of Code](##-implementation-of-code)
 
 
